@@ -19,7 +19,7 @@ const WhatAction = React.createClass({
               <li>3. You will <strong>get feedback</strong> on how close ("hot") or far ("cold") your guess is.</li>
             </ul>
             <p>So, Are you ready?</p>
-            <a className="close" onClick={this.props.handleCloseWhatAction} href="#">Got It!</a>
+            <a className="close" onClick={this.props.handleCloseWhatAction}>Got It!</a>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ const WhatAction = React.createClass({
               <li>3. You will <strong>get feedback</strong> on how close ("hot") or far ("cold") your guess is.</li>
             </ul>
             <p>So, Are you ready?</p>
-            <a className="close" href="#">Got It!</a>
+            <a className="close">Got It!</a>
           </div>
         </div>
       </div>
