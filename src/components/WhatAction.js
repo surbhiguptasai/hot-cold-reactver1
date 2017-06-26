@@ -1,7 +1,7 @@
 import React from 'react';
 
-const WhatAction = React.createClass({
 
+export default class WhatAction extends React.Component{
 
   render() {
     let showWhatActionlocal=this.props.showWhatAction;
@@ -51,6 +51,5 @@ const WhatAction = React.createClass({
 
 
   }
-});
+};
 
-export default WhatAction;

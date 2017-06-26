@@ -1,7 +1,7 @@
 import React from 'react';
 
-const GuessForm = React.createClass({
-	
+
+export default class GuessForm extends React.Component{
   render() {
     return (
       <form onSubmit={this.props.handleSubmit}>
@@ -10,6 +10,5 @@ const GuessForm = React.createClass({
       </form>
       );
   }
-});
+};
 
-export default GuessForm;

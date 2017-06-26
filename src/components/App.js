@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './Header';
 import GuessSection from './GuessSection';
 
-const App = React.createClass({
+
+  export default class App extends React.Component{
   render() {
     return (
       <div>
@@ -13,6 +14,4 @@ const App = React.createClass({
       </div>
       );
   }
-});
-
-export default App;
+};
