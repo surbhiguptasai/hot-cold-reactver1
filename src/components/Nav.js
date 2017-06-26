@@ -24,8 +24,8 @@ export default class Nav extends React.Component{
       <nav>
          
         <ul className="clearfix">
-          <li onClick={e => this.handleWhatAction(e)} ><a className="what" href="#">What ?</a></li>
-          <li onClick={e => this.handleNewGame(e)}><a className="new" href="#">+ New Game</a></li>
+          <li onClick={e => this.handleWhatAction(e)} ><a className="what">What ?</a></li>
+          <li onClick={e => this.handleNewGame(e)}><a className="new">+ New Game</a></li>
         </ul>
       </nav>
       );
