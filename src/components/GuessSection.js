@@ -48,21 +48,21 @@ winner(){
 
 }
   generateFeedback(){
-
-  if(this.state.secretNumber == this.state.value){
+let userFeedback="";
+  if(this.state.secretNumber === this.state.value){
     this.winner();
   } else if(Math.abs(this.state.secretNumber - this.state.value) < 10){
-    this.state.userFeedback = 'hot';
+    userFeedback = 'hot';
   } else if(Math.abs(this.state.secretNumber - this.state.value) < 20 && Math.abs(this.state.secretNumber - this.state.value) > 9){
-    this.state.userFeedback = 'Kinda hot';
+    userFeedback = 'Kinda hot';
   } else if(Math.abs(this.state.secretNumber - this.state.value) < 30 && Math.abs(this.state.secretNumber - this.state.value) > 19){
-    this.state.userFeedback = 'less than warm';
+    userFeedback = 'less than warm';
   } else {
-    this.state.userFeedback = 'cold';
+    userFeedback = 'cold';
   }
 
 
-  this.setState({userFeedback: this.state.userFeedback});
+  this.setState({userFeedback:userFeedback});
 }
   render() {
 
